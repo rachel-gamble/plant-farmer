@@ -1,0 +1,54 @@
+/* My Color Pallet: 
+.colors {
+    background-color: #20231A;
+    background-color: #173B1D;
+    background-color: #2F5C1F;
+    color: #AEB06D;
+    color: #D55D9D;
+    color: #C41C3E;
+    color: #00ff00
+} */
+
+.border {
+    border-color: #173B1D solid;
+    border-width: 2em;
+}
+
+.header {
+    color: #AEB06D;
+    font-family: "Carrois Gothic";
+    background-color: #20231A;
+    border-bottom: 2px solid lime;
+    text-shadow: lime 6px;
+    text-shadow: 3px #20231A;
+}
+
+.bg-image {
+    background-image: url('https://i.giphy.com/media/G0Odfjd78JTpu/giphy.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    height: 100vh;
+    color: #AEB06D
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.plant {
+    animation-name: shake;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    /* size-adjust: 10px; */
+    height: 50vh;
+    width: 50vh;
+}
+
+
+/* .box-shadow{
+    box-shadow: 3px 3px 3px 3px lime;
+} */

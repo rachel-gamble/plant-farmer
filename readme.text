@@ -1,0 +1,29 @@
+PLANT SIM 
+
+Functions:
+1. Users click on a plant to collect leaves
+2. The current leaf total is always displayed
+3. Users have 4 upgrades to purchase 
+4. Users can see the quantity of each upgrade they have purchased
+5. Users can see the TOTAL amount of resource to be collected per click, as well as resources collected on on the automatic interval
+6. Users can purchase at least 1 click upgrade
+7. Automatic upgrades are applied at least every 3 seconds
+8. Users cannot purchase an upgrade if they do not have enough resources
+9. Purchasing an upgrade decreases the current resource
+10. Each upgrade has different modifier values and prices
+11. When a user purchases an upgrade, the price of the upgrade increases
+
+Click Action:
+1. Water the plant 
+
+Resources:
+1. Gold
+
+Upgrades:
+Click:
+1. Pruning Shears
+2. Fertilizer
+Automatic:
+3. Cut flowers
+4. Harvest fruit
+
