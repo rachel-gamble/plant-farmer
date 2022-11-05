@@ -48,6 +48,39 @@ body {
     width: 50vh;
 }
 
+.button1 {
+    background-color: rgba(23, 59, 29, 0.7);
+    color: #AEB06D;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid lime;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 #20231A, 0 6px 20px 0 rgb(32, 35, 26);
+    text-shadow: 3px solid #20231A;
+}
+
+.button1:hover {
+    background-color: lime;
+    color: lime;
+    box-shadow: 0 8px 16px 0 #20231A, 0 6px 20px 0 #20231A;
+}
+
+.button2 {
+    background-color: #173b1d;
+    color: #AEB06D;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid #9a30fb;
+
+}
+
+.stats-box {
+    background-color: rgba(32, 35, 26, 0.5);
+    border-radius: 8px;
+    border: 3px solid lime;
+}
 
 /* .box-shadow{
     box-shadow: 3px 3px 3px 3px lime;

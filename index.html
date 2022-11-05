@@ -28,21 +28,40 @@
         </div>
     </header>
     <main class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10  justify-content-center">
-                <p CLASS="text-center">TESTING</p>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aspernatur
-                    sed.
-                    Dolorum harum aperiam
-                    vitae in, nulla tenetur fuga nesciunt obcaecati dolor dolore assumenda nemo, culpa voluptatibus
-                    totam
-                    eius cum.</p>
+        <!--PLAYER'S STATS-->
+        <div class="row d-flex text-center p-2 justify-content-center">
+            <div class="col-md-4">
+                <button onclick="buy('sheers')" class="btn btn button1">PRUNING SHEERS 10G</button>
             </div>
-            <div class="col-6 d-flex justify-content-center">
-                <img src="kisspng-dracaena-fragrans-plant-tropics-desktop-wallpaper-tropical-5abb77a4cf64c5.0950873015222353008495.png"
-                    class="plant" id="plant" onclick="mine">
+            <div class="col-md-4">
+                <button onclick="buy('fertilizer')" class="btn btn button1">PLANT FERTILIZER 50G</button>
             </div>
         </div>
+
+        </div>
+        </div>
+        <!--THIS IS OUR PLANT-->
+        <div class="row justify-content-center">
+            <div class="col-6 d-flex justify-content-center mt-5">
+                <img src="kisspng-dracaena-fragrans-plant-tropics-desktop-wallpaper-tropical-5abb77a4cf64c5.0950873015222353008495.png"
+                    class="plant pointer" onclick="waterPlant()">
+            </div>
+        </div>
+        <!--PLAYER'S UPGRADES AND STATS-->
+        <div class="row m-2 p-2 d-flex justify-content-center stats-box">
+            <h2 class="p-2 text-center text-shadow">GOLD: <span id="gold">0</span></h2>
+            <div id="sheers" class="col-md-4"></div>
+            <div id="fertilizer" class="col-md-4"></div>
+            <div id="flowers" class="col-md-4"></div>
+            <div id="fruit" class="col-md-4"></div>
+        </div>
+        <!--stats-->
+        <div class="row align-items-center">
+            <div class="col-md-5 d-flex flex-column align-items-center">
+
+            </div>
+        </div>"
+        <!--STORE TO BUY UPGRADES-->
     </main>
     <footer>
         <!-- place footer here -->
