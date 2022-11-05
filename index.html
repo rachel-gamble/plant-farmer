@@ -29,17 +29,8 @@
     </header>
     <main class="container-fluid">
         <!--PLAYER'S STATS-->
-        <div class="row d-flex text-center p-2 justify-content-center">
-            <div class="col-md-4">
-                <button onclick="buy('sheers')" class="btn btn button1">PRUNING SHEERS 10G</button>
-            </div>
-            <div class="col-md-4">
-                <button onclick="buy('fertilizer')" class="btn btn button1">PLANT FERTILIZER 50G</button>
-            </div>
-        </div>
 
-        </div>
-        </div>
+
         <!--THIS IS OUR PLANT-->
         <div class="row justify-content-center">
             <div class="col-6 d-flex justify-content-center mt-5">
@@ -50,10 +41,42 @@
         <!--PLAYER'S UPGRADES AND STATS-->
         <div class="row m-2 p-2 d-flex justify-content-center stats-box">
             <h2 class="p-2 text-center text-shadow">GOLD: <span id="gold">0</span></h2>
-            <div id="sheers" class="col-md-4"></div>
-            <div id="fertilizer" class="col-md-4"></div>
-            <div id="flowers" class="col-md-4"></div>
-            <div id="fruit" class="col-md-4"></div>
+            <h6 class="text-center text-shadow">GOLD EVERY 3 SECONDS: <span id="auto-gold">0</span></h6>
+            <h6 class="text-center text-shadow">GOLD MULTIPLIER: <span id="gold-multiplier">0</span></h6>
+            <div class="row d-flex text-center p-2 justify-content-center">
+                <div class="col-md-4">
+                    <button onclick="buySheers()" class="btn btn button1">PRUNING SHEERS 10G<br></button>
+                </div>
+                <div class="col-md-4">
+                    <button onclick="buyFertilizer()" class="btn btn button1">PLANT FERTILIZER 50G</button>
+                </div>
+                <div class="row d-flex text-center p-2 justify-content-center">
+                    <div class="col-md-4 stats-box">
+                        <p class="text-center fs-small font-light">sheers quantity: <span id="sheers-quantity">0</span>
+                        </p>
+                        <p class="text-center fs-small font-light">fertilizer quantity: <span
+                                id="fertilizer-quantity">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--AUTOMATIC UPGRADES-->
+            <div class="row d-flex text-center p-2 justify-content-center">
+                <div class="col-md-4">
+                    <button onclick="buyFlowers()" class="btn btn button1">CUT FLOWERS 100G<br></button>
+                </div>
+                <div class="col-md-4">
+                    <button onclick="buyFruit()" class="btn btn button1">HARVEST FRUIT 500G</button>
+                </div>
+                <div class="row d-flex text-center p-2 justify-content-center">
+                    <div class="col-md-4 stats-box">
+                        <p class="text-center fs-small font-light">flowers quantity: <span
+                                id="flowers-quantity">0</span>
+                        </p>
+                        <p class="text-center fs-small font-light">fruit quantity: <span id="fruit-quantity">0</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--stats-->
         <div class="row align-items-center">
@@ -62,6 +85,13 @@
             </div>
         </div>"
         <!--STORE TO BUY UPGRADES-->
+
+        <div class="row">
+            <div id="upgradeContainer">
+            </div>
+            <div id="shopContainer"></div>"
+
+        </div>
     </main>
     <footer>
         <!-- place footer here -->
