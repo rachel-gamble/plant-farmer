@@ -1,6 +1,6 @@
 let gold = 0
 let autoGold = 0
-let goldMultiplier = 0
+let goldMultiplier = 1
 
 console.log('Welcome to Plant Farmer ✨🌱✨')
 
@@ -11,7 +11,7 @@ const sheers = {
 }
 
 const fertilizer = {
-    cost: 30,
+    cost: 50,
     quantity: 0,
     multiplier: 5
 }
@@ -25,11 +25,14 @@ const flowers = {
 const fruit = {
     cost: 500,
     quantity: 0,
-    multiplier: 20
+    multiplier: 25
 }
 
 function waterPlant() {
-    gold++
+    gold + goldMultiplier
+    if (gold >= 0) {
+        goldMultiplier == 0
+    }
     if (goldMultiplier > 0) {
         gold += goldMultiplier
     }
@@ -70,6 +73,7 @@ function buyFlowers() {
         gold -= flowers.cost
         flowers.cost *= 2
         goldMultiplier += flowers.multiplier
+        autoGold += flowers.multiplier * flowers.quantity
         console.log('bought fruit')
     }
     update()
@@ -81,6 +85,7 @@ function buyFruit() {
         gold -= fruit.cost
         fruit.cost *= 2
         goldMultiplier += fruit.multiplier
+        autoGold += fruit.multiplier * fruit.quantity
         console.log('bought fruit')
     }
     update()
@@ -91,12 +96,14 @@ function buyFruit() {
 function flowerInterval() {
     if (flowers.quantity > 0) {
         gold += flowers.quantity * flowers.multiplier
+        // autoGold += flowers.quantity * flowers.multiplier
     }
     update()
 }
 function fruitInterval() {
     if (fruit.quantity > 0) {
         gold += fruit.quantity * fruit.multiplier
+        // autoGold += fruit.quantity * fruit.multiplier
     }
     update()
 }
@@ -111,87 +118,7 @@ function update() {
     document.getElementById('fruit-quantity').innerText = fruit.quantity
 }
 
+// AUTOGOLD: AUTO GOLD == FLOWER.QUANTITY * FLOWER.MULTIPLIER + FRUIT.QUANTITY * FRUIT.MULTIPLIER
 setInterval(flowerInterval, 3000)
 setInterval(fruitInterval, 3000)
-
-
-
-// function collectAutoUpgrades() {
-//     setInterval(collectAutoUpgrades()
-//     {Element.inner})
-//     goldMultiplier++
-//     gold = goldMultiplier *
-// }
-
-// function goldMultiplier() {
-//     for (const key in automaticUpgrades) {
-//         const autoUpgrade = automaticUpgrades[key];
-//         if (autoUpgrade.quantity > 0) {
-//             gold += autoUpgrade.multiplier * autoUpgrade.quantity;
-//         }
-//     }
-//     update()
-// }
-
-// function drawUpgrades() {
-//     if (gold >= 10) {
-//         sheers.style.visibility = "visible";
-//     }
-//     if (gold >= 30) {
-//         fertilizer.style.visibility = "visible";
-//     }
-//     if (gold >= 50) {
-//         flowers.style.visibility = "visible";
-//     }
-//     if (gold >= 100) {
-//         fruit.style.visibility = "visible"
-//     }
-// }
-
-// function buy(name) {
-//     let upgrade = upgrades.find(f => f.name == name)
-//     console.log(upgrade);
-//     if (!upgrade) {
-//         return
-//     }
-//     if (gold < upgrade.cost) {
-//         window.alert("Water our plant for more gold")
-//         return
-//     }
-
-//     gold -= upgrade.cost
-//     upgrade.multiplier++
-//     console.log(upgrade.multiplier);
-
-
-//     drawUpgrades(upgrade)
-//     goldMultiplier()
-//     update()
-// }
-
-// const automaticUpgrades = [{
-//     name: 'flowers',
-//     cost: 6,
-//     quantity: 50,
-//     multiplier: 10
-// }, {
-//     name: 'fruit',
-//     cost: 100,
-//     quantity: 0,
-//     multiplier: 20,
-// }
-// ]
-
-// const upgrades = [
-//     {
-//         name: 'sheers',
-//         cost: 10,
-//         quantity: 0,
-//         multiplier: 1
-//     }, {
-//         name: 'fertilizer',
-//         cost: 30,
-//         quantity: 0,
-//         multiplier: 5
-//     }
-// ]
+update()

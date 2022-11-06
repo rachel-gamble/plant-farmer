@@ -33,48 +33,68 @@
 
         <!--THIS IS OUR PLANT-->
         <div class="row justify-content-center">
-            <div class="col-6 d-flex justify-content-center mt-5">
-                <img src="kisspng-dracaena-fragrans-plant-tropics-desktop-wallpaper-tropical-5abb77a4cf64c5.0950873015222353008495.png"
-                    class="plant pointer" onclick="waterPlant()">
-            </div>
-        </div>
-        <!--PLAYER'S UPGRADES AND STATS-->
-        <div class="row m-2 p-2 d-flex justify-content-center stats-box">
-            <h2 class="p-2 text-center text-shadow">GOLD: <span id="gold">0</span></h2>
-            <h6 class="text-center text-shadow">GOLD EVERY 3 SECONDS: <span id="auto-gold">0</span></h6>
-            <h6 class="text-center text-shadow">GOLD MULTIPLIER: <span id="gold-multiplier">0</span></h6>
-            <div class="row d-flex text-center p-2 justify-content-center">
-                <div class="col-md-4">
+            <!-- <span class="col-3button1 m-3 p2">
+                    <p class="bold fs-5">
+                        ✨🌱✨ INSTRUCTIONS ✨🌱✨
+                    </p>
+                    <p class="fs-6 p-2">
+                        1. WATER THE PLANT BY CLICKING ON IT<BR>
+                        2. COLLECT GOLD <BR>
+                        3. BUY UPGRADES
+                    </p>
+                </span> -->
+            <div class="col-2 stats-box m-3 p-2 text-center">
+                <h6 class="font-lime">BUY INSTANT UPGRADES</h6><BR>
+                <p class="p-2">INCREASES GOLD PER CLICK</p>
+                <div class="col-md-12 p-2"><BR>
                     <button onclick="buySheers()" class="btn btn button1">PRUNING SHEERS 10G<br></button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <button onclick="buyFertilizer()" class="btn btn button1">PLANT FERTILIZER 50G</button>
-                </div>
-                <div class="row d-flex text-center p-2 justify-content-center">
-                    <div class="col-md-4 stats-box">
-                        <p class="text-center fs-small font-light">sheers quantity: <span id="sheers-quantity">0</span>
-                        </p>
-                        <p class="text-center fs-small font-light">fertilizer quantity: <span
+                </div><br><BR>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p class="text-center fs-small font-light">sheers owned: <span id="sheers-quantity">0</span></p>
+                        <p class="text-center fs-small font-light">fertilizer owned: <span
                                 id="fertilizer-quantity">0</span></p>
                     </div>
                 </div>
             </div>
-            <!--AUTOMATIC UPGRADES-->
-            <div class="row d-flex text-center p-2 justify-content-center">
-                <div class="col-md-4">
-                    <button onclick="buyFlowers()" class="btn btn button1">CUT FLOWERS 100G<br></button>
-                </div>
-                <div class="col-md-4">
-                    <button onclick="buyFruit()" class="btn btn button1">HARVEST FRUIT 500G</button>
-                </div>
+            <!--THE PLANT-->
+            <div class="col-6 d-flex justify-content-center mt-2">
+                <img src="kisspng-dracaena-fragrans-plant-tropics-desktop-wallpaper-tropical-5abb77a4cf64c5.0950873015222353008495.png"
+                    class="plant pointer" onclick="waterPlant()">
+            </div>
+            <div class="col-2 stats-box m-3 p-2 text-center">
+                <h6 class="font-lime text-center">BUY RE-OCCURRING UPGRADES</h6><BR>
+                <P>INCREASES GOLD EVERY 3 SECONDS</P>
                 <div class="row d-flex text-center p-2 justify-content-center">
-                    <div class="col-md-4 stats-box">
-                        <p class="text-center fs-small font-light">flowers quantity: <span
-                                id="flowers-quantity">0</span>
-                        </p>
-                        <p class="text-center fs-small font-light">fruit quantity: <span id="fruit-quantity">0</span>
-                        </p>
+                    <div class="col-md-12 p-2">
+                        <button onclick="buyFlowers()" class="btn btn button1">HARVEST FLOWERS 100G<br></button>
                     </div>
+                    <div class="col-md-12">
+                        <button onclick="buyFruit()" class="btn btn button1">HARVEST FRUIT 500G</button>
+                    </div><br>
+                    <div class="row d-flex text-center justify-content-center">
+                        <div class="col-md-12 m-2 p-2"><br>
+                            <p class="text-center fs-small font-light">flowers quantity: <span
+                                    id="flowers-quantity">0</span>
+                            </p>
+                            <p class="text-center fs-small font-light">fruit quantity: <span
+                                    id="fruit-quantity">0</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--PLAYER'S UPGRADES AND STATS-->
+        <div class="row m-2 p-2 d-flex justify-content-center">
+            <div class="col-8 stats-box">
+                <h2 class="p-2 text-center text-shadow">GOLD: <span id="gold">0</span></h2>
+                <h6 class="text-center text-shadow">GOLD PER CLICK: <span id="gold-multiplier">0</span></h6>
+                <h6 class="text-center text-shadow">GOLD EVERY 3 SECONDS: <span id="auto-gold">0</span></h6>
+                <div class="row d-flex text-center p-2 justify-content-center">
                 </div>
             </div>
         </div>

@@ -64,6 +64,10 @@ body {
     color: #373731
 }
 
+.font-lime {
+    color: lime;
+}
+
 .button1:hover {
     background-color: lime;
     color: lime;
