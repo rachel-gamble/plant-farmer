@@ -61,11 +61,17 @@ body {
 }
 
 .light-font {
-    color: #373731
+    color: #AEB06D;
+    font-size: small;
+
 }
 
 .font-lime {
     color: lime;
+}
+
+.small {
+    font-size: smaller;
 }
 
 .button1:hover {
@@ -88,6 +94,7 @@ body {
     background-color: rgba(32, 35, 26, 0.5);
     border-radius: 8px;
     border: 3px solid lime;
+    max-height: 200em;
 }
 
 

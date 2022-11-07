@@ -32,7 +32,7 @@
 
 
         <!--THIS IS OUR PLANT-->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-3">
             <!-- <span class="col-3button1 m-3 p2">
                     <p class="bold fs-5">
                         ✨🌱✨ INSTRUCTIONS ✨🌱✨
@@ -44,15 +44,19 @@
                     </p>
                 </span> -->
             <div class="col-2 stats-box m-3 p-2 text-center">
-                <h6 class="font-lime">BUY INSTANT UPGRADES</h6><BR>
-                <p class="p-2">INCREASES GOLD PER CLICK</p>
-                <div class="col-md-12 p-2"><BR>
-                    <button onclick="buySheers()" class="btn btn button1">PRUNING SHEERS 10G<br></button>
+                <h6 class="font-lime">BUY INSTANT<br>UPGRADES</h6>
+                <p class="p-1">INCREASES GOLD PER CLICK</p>
+                <div class="col-md-12 p-2 pt-3">
+                    <button onclick="buySheers()" class="btn btn button1">PRUNING SHEERS <span
+                            id="sheers-cost">10</span>G<br></button>
+                    <p class="small p-2">gold per click: <span id="sheers-multiplier">2</span>G<br></p>
                 </div>
                 <div class="col-md-12">
-                    <button onclick="buyFertilizer()" class="btn btn button1">PLANT FERTILIZER 50G</button>
-                </div><br><BR>
-                <div class="row text-center">
+                    <button onclick="buyFertilizer()" class="btn btn button1">PLANT FERTILIZER <span
+                            id="fertilizer-cost">50</span>G<br></button>
+                    <p class="small p-2">gold per click: 5G</p>
+                </div>
+                <div class="row text-center p-2">
                     <div class="col-md-12">
                         <p class="text-center fs-small font-light">sheers owned: <span id="sheers-quantity">0</span></p>
                         <p class="text-center fs-small font-light">fertilizer owned: <span
@@ -66,17 +70,22 @@
                     class="plant pointer" onclick="waterPlant()">
             </div>
             <div class="col-2 stats-box m-3 p-2 text-center">
-                <h6 class="font-lime text-center">BUY RE-OCCURRING UPGRADES</h6><BR>
-                <P>INCREASES GOLD EVERY 3 SECONDS</P>
+                <h6 class="font-lime">BUY RE-OCCURRING UPGRADES</h6>
+                <P class="p-1">INCREASES GOLD EVERY 3 SEC.</P>
                 <div class="row d-flex text-center p-2 justify-content-center">
                     <div class="col-md-12 p-2">
-                        <button onclick="buyFlowers()" class="btn btn button1">HARVEST FLOWERS 100G<br></button>
+                        <button onclick="buyFlowers()" class="btn btn button1">HARVEST FLOWERS <span
+                                id="flowers-cost">100</span>G<br></button>
+                        <p class="small pt-2">gold per click & every 3 seconds: <span
+                                id="flowers-multiplier">10</span>G<br></p>
                     </div>
                     <div class="col-md-12">
-                        <button onclick="buyFruit()" class="btn btn button1">HARVEST FRUIT 500G</button>
+                        <button onclick="buyFruit()" class="btn btn button1">HARVEST FRUIT <span
+                                id="fruit-cost">500</span>G<br></button>
+                        <p class="small pt-2">gold per click & every 3 seconds: 25</p>
                     </div><br>
                     <div class="row d-flex text-center justify-content-center">
-                        <div class="col-md-12 m-2 p-2"><br>
+                        <div class="col-md-12 m-2 p-2">
                             <p class="text-center fs-small font-light">flowers quantity: <span
                                     id="flowers-quantity">0</span>
                             </p>

@@ -116,6 +116,14 @@ function update() {
     document.getElementById('fertilizer-quantity').innerText = fertilizer.quantity
     document.getElementById('flowers-quantity').innerText = flowers.quantity
     document.getElementById('fruit-quantity').innerText = fruit.quantity
+    document.getElementById('sheers-cost').innerText = sheers.cost
+    document.getElementById('fertilizer-cost').innerText = fertilizer.cost
+    document.getElementById('flowers-cost').innerText = flowers.cost
+    document.getElementById('fruit-cost').innerText = fruit.cost
+    document.getElementById('sheers-multiplier').innerText = sheers.multiplier
+
+
+
 }
 
 // AUTOGOLD: AUTO GOLD == FLOWER.QUANTITY * FLOWER.MULTIPLIER + FRUIT.QUANTITY * FRUIT.MULTIPLIER
