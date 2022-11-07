@@ -1,6 +1,8 @@
 let gold = 0
 let autoGold = 0
 let goldMultiplier = 1
+// let sheersPerClick = 2
+// let fertilizerPerClick = 5
 
 console.log('Welcome to Plant Farmer ✨🌱✨')
 
@@ -51,6 +53,9 @@ function buySheers() {
         goldMultiplier += sheers.multiplier
         console.log("purchased sheers")
     }
+    // if (sheers.quantity > 1) {
+    //     sheersPerClick += 2
+    // }
     update()
 }
 
@@ -62,6 +67,9 @@ function buyFertilizer() {
         goldMultiplier += fertilizer.multiplier
         console.log("purchased fertilizer")
     }
+    // if (fertilizer.quantity > 1) {
+    //     fertilizerPerClick += 5
+    // }
     update()
 }
 
@@ -120,11 +128,10 @@ function update() {
     document.getElementById('fertilizer-cost').innerText = fertilizer.cost
     document.getElementById('flowers-cost').innerText = flowers.cost
     document.getElementById('fruit-cost').innerText = fruit.cost
-    document.getElementById('sheers-multiplier').innerText = sheers.multiplier
-
-
-
+    // document.getElementById('sheers-multiplier').innerText = sheersPerClick
+    // document.getElementById('fertilizer-multiplier').innerText = fertilizerPerClick
 }
+
 
 // AUTOGOLD: AUTO GOLD == FLOWER.QUANTITY * FLOWER.MULTIPLIER + FRUIT.QUANTITY * FRUIT.MULTIPLIER
 setInterval(flowerInterval, 3000)
